@@ -11,13 +11,12 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
-import { CommonModule } from '@angular/common';
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpClientModule,
-    CommonModule,
+
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
@@ -33,6 +32,7 @@ import { CommonModule } from '@angular/common';
     ProductAlertsComponent,
     ProductDetailsComponent,
     CartComponent,
+    ShippingComponent,
   ],
   bootstrap: [AppComponent],
 })
